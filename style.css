@@ -1,0 +1,458 @@
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+
+header {
+    margin-left: 0;
+    background-size: cover;
+    height: calc(100vh - 10vw);
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: url("image/cartemere.jpeg");
+    background-color: #cccccc;
+	text-transform: uppercase;
+    font-size: 60px;
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 100px;
+
+}
+@media all and (max-width: 600px) {
+    header {
+        margin-left: 0px;
+        
+
+    }
+
+}
+span {
+	margin-top: 50px;
+}
+h1 span {
+    position: relative;
+}
+@media screen and (min-width: 601) and (max-width: 940px) {
+    h1 span {
+        font-size: 20px;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    h1 span{
+        font-size: 20px;
+        
+
+    }
+
+}
+/* Photo */
+.logo {
+    position: absolute;
+    left: 2.9%;
+    top: 4%;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .logo {
+        margin-top: 400px;
+        margin-left: 20px;
+        
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 160px;
+        margin-right: 100px;
+        
+    }
+  }
+/*class de la nav */
+.beau {
+	margin-top: 50px;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+    .beau {
+        font-size: 15px;
+        margin-left: 20px;
+        width: 90%;    
+    }
+  }
+
+nav{
+    display: flex;
+    
+}
+@media screen and (max-width: 400px) {
+    .nav {
+        width: 300px;
+    }
+  }
+nav>a{
+    display: block;
+    width: 400px;
+    background-color: #d2a28c;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #FFF;
+    margin: 1px;
+    text-decoration: none; /* Supprime le surlignage des liens hypertexte */
+}
+
+
+nav>a:hover{
+    background-color: #D2B48C;
+    color: #000;
+    transition:all 0.3s ease;
+}
+#ch{
+    display: none; /* Pour masquer le checbox */
+}
+#lab{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(#FFF 0%,#FFF 20%,transparent 21%, transparent 40%,#FFF 41%,#FFF 60%,transparent 61%, transparent 80%,#FFF 81%, #FFF 100%);
+    margin: 4px;
+    display: none; /* Faire disparaitre le label lorsque l'écran s'acradit */
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    #lab {
+        margin-top: 150px;
+        margin-left: 40px;  
+    }
+  }
+@media screen and (max-width: 400px) {
+    #lab {
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-bottom: -100px;  
+    }
+  }
+@media all and (max-width: 960px){
+    nav{
+        display: block;
+        position: absolute;
+        left: 0; /* Pour que la barre de nav occupe tout l'espace */
+        right: 0;/* Pour que la barre de nav occupe tout l'espace */
+        transform: translate(-1000px,0); /* Le menu disparait */
+        transition: all 0.9s ease;
+        
+    }
+    nav>a{
+        width: auto;
+    }
+    #ch:checked+nav{
+        transform: translate(0,0); /* Le menu apparait */
+        transition: all 0.9s ease;
+    }
+    
+    #lab{
+        display: block;
+    }
+}
+
+/* bouton Mon CV */
+.container-btns {
+    margin-left: 600px;
+}
+@media screen and (max-width: 901px) {
+    .container-btns {
+        margin-left: 400px;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 900px)  {
+    .container-btns {
+        margin-left: 80px;
+        
+    }
+  }
+.btn-first {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-top: 100px;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .btn-first {
+        width: 100px;
+        margin-left: 15px;
+        
+    }
+  }
+.btn-first:nth-child(1){
+    margin-right: 30px;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.btn-first a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+    
+}
+@media screen and (max-width: 400px) {
+    .btn-first a {
+        font-size: 20px;
+    }
+  }
+.btn-first a:hover {
+    color: #bf8208;
+    text-decoration: none;
+    text-shadow: 3px 3px 3px black;
+}
+
+/*main*/
+
+
+main h1 {
+    text-align: center;
+}
+
+.wrapper-a img {
+	width: 100%;
+	height: 500px;
+}
+
+.center-div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%; 
+  height:600px;
+  text-align: center;
+  display: block;
+  border-radius: 15px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.5em;
+  margin-right: 10%;
+  margin-left: 10%;
+  
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .center-div {
+        height: auto;
+        margin-top: 3%;
+    }
+}
+@media all and (max-width: 600px) {
+    .center-div {
+        height: auto;
+        margin-top: 30px;
+    }
+}
+
+.center-div p {
+	font-size: 20px;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat, repeat-y;
+    background-image: url("image/handicap5.jpg");
+    color: black;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+.center-div h1 {
+    padding: 40px;
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .center-div h1 {
+        height: auto;
+        margin-top: 3%;
+    }
+}
+@media all and (max-width: 600px) {
+    .center-div h1 {
+        height: auto;
+        margin-top: 80px;
+        
+    }
+}
+
+
+
+/* Les compétences */
+.flex-container_a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+.column_a {
+    text-align: center;
+    width: 32%;
+    
+}
+.column_a img{
+    max-width: 100%;
+    margin-left: 0!important;
+    height: 100px;
+    width: 100px;
+    
+}
+/* Style h1 compétences */
+.bur {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Portfolio */
+.container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.col-md-4 img {
+    width: 300px;
+    height: 350px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+@media screen and (min-width: 601px) and (max-width: 940px) {
+    .col-md-4 img {
+        margin-left: 30px;
+        width: 200px;
+        height: 250px;
+    }
+}
+@media all and (max-width: 600px) {
+    .col-md-4 img {
+        margin-left: 80px;
+        width: 200px;
+        height: 250px;
+    }
+}
+
+.col-md-4 h4 {
+    color: gray;
+    margin-left: 110px;
+}
+@media all and (max-width: 600px) {
+    .col-md-4 h4 {
+       font-size: 20px;
+    }
+}
+.buto {
+    color: #333;
+    margin-top: 20px;
+   
+}
+
+/* Footer */
+.foo {
+    text-align: center;
+    color: #333;
+}
+.foo {
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+  }
+  @media all and (max-width: 600px) {
+    .foo {
+        height: auto;
+        margin-top: 20%;
+        margin-left: -2.5%;
+        margin-right: 10%;    
+    }
+}
+.foo h1, h3 {
+    font-size: 40px;
+    
+  }
+  @media all and (max-width: 600px) {
+    .foo h1, h3 {
+        font-size: 15px;   
+    }
+}
+#bo {
+    font-size: 40px;
+}
+@media all and (max-width: 600px) {
+    #bo {
+        font-size: 30px;   
+    }
+}
+#ba {
+    font-size: 30px;
+}
+@media all and (max-width: 600px) {
+    #ba {
+        font-size: 15px; 
+          
+    }
+}
+  
+  .foo::after {
+    content: "";
+    background: url("image/cartemere.jpeg");
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;   
+  }
+  
+  /* texte de contact */
+  .foo {
+      text-align: center;
+      color: #333;
+      padding: 80px;
+  }
+  
+  .foo a {
+      font-size: 15px;
+  }
+  footer {
+      width: 100%;
+      margin-left: -10px;
+  }
+  @media all and (max-width: 600px) {
+    footer {
+        margin-right: 10px;
+        margin-left: 0;
+        
+    }
+}
+  
+
